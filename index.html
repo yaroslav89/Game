@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<header>
+		<input type="text" id="get_name" name="user" placeholder="Enter your name" autocomplete="off">
+		<input type="button" id="login" value="Go">
+	</header>
+	<div class="game">
+		
+			<p class="game_info"></p>
+			<ul>
+				<li><input class="choice2" type="radio" name="radio" value="rock">Rock</li>
+				<li><input class="choice2" type="radio" name="radio" value="paper">Paper</li>
+				<li><input class="choice2" type="radio" name="radio" value="scissor">Scissor</li>
+			</ul>
+			<input type="button" id="close" value="Exit game">
+			<input type="button" id="play" value="Play"><br>
+			<span>Your health: </span><meter id="lifemeter" min="0" max="100" low="30" high="70" optimum="100" value="100"></meter>
+			<p>Your score is: <output id="score">0</output> points.</p>
+		
+	</div>
+</body>
+</html>
